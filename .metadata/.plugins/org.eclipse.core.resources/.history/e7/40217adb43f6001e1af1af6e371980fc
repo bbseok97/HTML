@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+	/*
+		1. 앞에서 넘어온 폼값을 받아서 평균을 구합니다.
+		2. 평균이 60점 이상이면 score_quiz03.jsp로 이동
+			"~~님 평균 xx점 합격" 을 출력
+		3. 평균이 60점 미만이면 score_quiz04.jsp로 이동
+			"~~님 평균 xx점 불합격" 을 출력
+			
+			조건) 세션 사용 X
+	*/
+	
+	String name = request.getParameter("name");
+	Integer ko = (int)request.getAttribute("ko");
+	Integer en = (int)request.getAttribute("en");
+	Integer math = (int)request.getAttribute("math");
+	
+	int avg = (ko + en + math) / 3;
+	
+%>

@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>res_ex01.jsp</title>
+	</head>
+	<body>
+		<h2>res_ex01</h2>
+		<form action="res_ex01_result.jsp">
+			<input type="text" name="age">
+			<input type= "submit">
+		</form>
+	</body>
+</html>

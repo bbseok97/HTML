@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<%
+	/*
+		JSP 내장 객체 종류
+		1. request				6. pageContext
+		2. response				7. page
+		3. out					8. config
+		4. session				9. exception
+		5. application
+	*/
+%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>study04.jsp</title>
+	</head>
+	<body>
+	
+	</body>
+</html>

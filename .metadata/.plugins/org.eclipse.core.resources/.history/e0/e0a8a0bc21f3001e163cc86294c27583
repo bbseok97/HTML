@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<%
+	String id = request.getParameter("id");
+	String pw = request.getParameter("password");
+	String name = request.getParameter("name");
+	String address = request.getParameter("address");
+	String interest = request.getParameter("interst");
+	String major = request.getParameter("major");
+	
+%>
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>req_get_parameter.jsp</title>
+	</head>
+	<body>
+		아이디 : <%=id %>
+		비밀번호 : <%=pw %>
+		이름 : <%=name %>
+		주소 : <%=address %>
+		관심분야 : <%=interest %>
+		전공 : <%=major %>
+		통신사 :
+		
+	</body>
+</html>

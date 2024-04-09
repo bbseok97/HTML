@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>path_quiz</title>
+	</head>
+	<body>
+		<!-- a 태그를 이용하여 경로 이동 -->
+		
+		<!-- 1.jspbasic 폴더에 03_express.jsp 파일로 접근	상대/절대 경로로 접근 -->
+		<a href="jspbasic/03.expression.jsp">03 express 페이지로 이동(상대)</a>
+		<a href="/jspbasic/jspbasic/03.expression.jsp">03 express 페이지로 이동(절대)</a>
+		<!-- 2. TestServlet 서블릿 페이지로 상대/절대 경로로 접근 -->
+		<a href="../servlet/testServlet.jsp">서블릿으로 상대 경로 접근</a>
+		<a href="/jspbasic/servlet/testServlet.jsp">서블릿으로 절대 경로 접근</a>
+		<!-- 3. images 폴더에 있는 이미지 파일에 상대 경로로 접근 -->
+		<img src="" width="100"><a href="../images/다운로드.jpg">다운로드 페이지로 이동</a>
+	</body>
+</html>

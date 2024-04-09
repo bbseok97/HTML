@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<!-- 태그에 CSS 적용방법 3가지 
+		1. 태그에 직접 지정하는 방법 : style 속성	=> 지정된 태그에만 적용
+		2. head에 지정하는 방법 : <style> 태그 사용	=> 그 웹 페이지에만 적용
+		3. 외부 CSS파일을 지정하는 방법 : link 태그로 외부 CSS 파일을 지정		=> 연결한 모든 페이지 적용
+	-->
+	<head>
+		<meta charset="UTF-8">
+		<title>id/class 선택자로 표꾸미기</title>
+		<style type="text/css">
+			table {							/* 태그 선택자 사용 */
+				border-collapse: collapse;	/* 중복 테두리 제거 collapse */
+				border: 3px solid blue;		/* border(태그 외곽) 처리 : 두께, 선 타입, 색상 */
+				width: 80%;					/* 폭 설정 */
+				text-align: center;			/* 글자 정렬 */
+			}
+			tr{
+				height: 28px;				/* 높이 설정*/
+				font-size: 13px;			/* 글 사이즈 설정*/
+			}
+			tr:hover {						/* 마우스 커서가 위에 있을 때 */
+				color: white;				/* 글 색상 */
+				font-weight: bold;
+				background-color: #00ccff;	/* 배경색 설정 */
+				cursor: pointer;			/* 커서 타입 지정 */
+			}
+			th{
+				height: 30px;
+				font-weight: border;		/* 글자 두꼐 */
+				background-color: #e0bbd2;	
+			}
+			
+			/* CSS 선택자 중에 id속성은 "#"으로 표시*/
+			#id { width: 25%; }
+			#name{ width: 20%; }
+			#major{ width: 20%; }
+			#email{ width: 35%; }
+			
+			/* CSS 선택자 중에 class 속성은 "."으로 표시 */
+			.odd{
+				background-color: #f2ff9d;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<table border="1" id="tab">
+		 	<tr>	<!-- 1행 -표 헤더, 항목(제목) -->
+				<th id="id">학번</th>	<!-- th 제목열 -->
+				<th id="name">이름</th>
+				<th id="major">학과</th>
+				<th id="email">이메일</th>
+		 	</tr>
+			<tr>	<!-- 2행 -->
+				<td>20240401</td>
+				<td>홍길동</td>
+				<td>체육학과</td>
+				<td>hong@naver.com</td>
+		 	</tr>
+		 	<tr class="odd">	<!-- 3행 -->
+		 		<td>20240402</td>
+				<td>이순신</td>
+				<td>해양학과</td>
+				<td>lee@naver.com</td>
+		 	</tr>
+		 	<tr>	<!-- 4행 -->
+		 		<td>20240403</td>
+				<td>강감찬</td>
+				<td>정치외교학과</td>
+				<td>kang@naver.com</td>
+		 	</tr>
+		 	<tr class="odd">	<!-- 5행 -->
+		 		<td>20240404</td>
+				<td>유관순</td>
+				<td>유아교육학과</td>
+				<td>you@naver.com</td>
+		 	</tr>
+		 	
+		</table>
+	</body>
+</html>

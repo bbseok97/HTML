@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<%
+	/*
+		웹 프로그래밍이란?
+		- 웹 어플리케이션을 구현하는 행위.
+		- 웹 어플리케이션이란 웹을 기반으로 작동되는 프로그램.
+		- 웹이란 1개 이상의 사이트가 연결되어 있는 인터넷 서비스.
+		- 인터넷이란 1개 이상의 네트워크가 연결된 형태.
+	*/
+	
+	/*
+		웹 어플리케이션의 장점
+		- 사용자 : 별도의 설치없이 프로그램을 사용할 수 있다. (접근성이 용이)
+		- 개발자 : 사용자용 프로그램을 별도로 제작하지 않고, HTML을 이용해
+			사용자UI를 구축하기 떄문에 시간과 노력을 줄일 수 있다.
+	*/
+%>
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>study01.jsp</title>
+	</head>
+	<body>
+	
+	</body>
+</html>

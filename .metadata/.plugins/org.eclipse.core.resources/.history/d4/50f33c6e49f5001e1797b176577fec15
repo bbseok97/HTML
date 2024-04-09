@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>req_quiz_02.jsp</title>
+	</head>
+	<body>
+		<%-- a태그 클릭시 req_quiz02_ok.jsp 에 학생번호를 출력하세요. --%>
+		<form action="">
+		<a href="../req_quiz02_ok.jsp"></a>
+		<%
+			for(int sdNum=0; sdNum <= 30; sdNum++){
+				
+			}
+		%>		
+		</form>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<%
+	/*
+		JSP 내장 객체 종류
+		1. request				6. pageContext
+		2. response				7. page
+		3. out					8. config
+		4. session				9. exception
+		5. application
+		
+		JSP 내장 객체
+		- 개발자가 JSP 파일 내에 객체를 생성하지 않고 바로 사용할 수 있는 객체.
+		- 내장객체는 JSP 컨테이너에 의해 서블릿으로 변환될 떄 자동으로 객체 생성.
+	*/
+%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>study04.jsp</title>
+	</head>
+	<body>
+		<%-- request 객체의 이해 --%>
+		<!-- 웹 브라우저를 통해 서버에 정보를 요청하는 것 -->
+		<!-- 요청 정보가 담기고 관리되는 곳이 request 객체이다. -->
+	</body>
+</html>

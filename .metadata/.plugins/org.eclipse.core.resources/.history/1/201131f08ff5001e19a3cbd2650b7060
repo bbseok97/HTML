@@ -1,0 +1,52 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<%
+	/*
+		JSP 특징
+		1. 동적 웹 어플리케이션 (자바 코드 사용가능)
+		2. 클라이언트 요청에 동적으로 작동, 응답은 HTML을 이용
+		3. JSP는 웹서버와 통신시에 자동으로 Servlet으로 변환
+		4. MVC(Model-View-Control)패턴에서 View로 이용됨.
+		
+		JSP 태그의 개념 이해
+		- Servlet은 java언어를 이용하여 문서를 작성, 
+			출력객체(printWirter)를 이용하여 html 코드를 삽입한다.
+			
+		- jsp는 서블릿과 반대로 html 코드에 java 언어를 삽입하여 동적
+			문서를 만들 수 있다.
+			
+		- html 코드 안에 java 코드를 삽입하기 위해서는 jsp태그를 이용
+			해야한다.
+			
+		JSP 태그 종류
+		- 스크립트릿(scriptlet) : 모든 자바 코드 기술 가능
+		- 지시자(directive) : 페이지 속성을 지정
+		- 선언자(declaration) : 변수나 메서드 선언 시 사용
+		- 표현식(expression) : 결과 값을 출력할 때 사용.
+		- 주석(comments) : 코드 주석처리 시에 사용.
+	*/
+%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>study02.jsp</title>
+	</head>
+	<body>
+		<%-- 스크립트릿 --%>
+		<%--JAVA 언어를 사용하기 위해 가장 많이 사용하는 태그 --%>
+		<%-- 스크립트릿 안에는 거의 모든 JAVA 코드를 사용할 수 있다. --%>
+		
+		<%-- 선언(Declaration) --%>
+		<%--JSP 페이지 내에서 변수나 메서드를 선언할 떄 사용 --%>
+		<%--선언된 변수 및 메서드는 전역의 의미(멤버변수)로 사용된다. --%>
+		
+		<%-- 표현식(Expression) --%>
+		<%--JSP 페이지 내에서 사용되는 변수값 또는 메서드 호출 결과 값을
+			출력하기 위해 사용. 결과 값의 데이터 유형은 String이며, 세미콜론 사용불가
+		 --%>
+		 <%--표현식은 out.println()을 대체한다. --%>
+		
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>reserve.jsp</title>
+	</head>
+	<body>
+		<form>
+		<h1 style="text-align:center">콘서트 예약</h1>
+		<h3 style="text-align:center">예약할 좌석을 선택하세요</h3>
+		<hr>
+		<h3 style="text-align:center">좌석 배치도</h3>
+		<% for(int i=1; i <= 6; i++){ %>
+			<%for(char c='A'; c <= 'Z'; c++){ %>
+			<input type="checkbox" name="seat">
+			<%} %> 
+		<%} %>
+		
+		<input type="submit" value="예약">
+		<input type="submit" value="취소">
+		</form>
+	</body>
+</html>

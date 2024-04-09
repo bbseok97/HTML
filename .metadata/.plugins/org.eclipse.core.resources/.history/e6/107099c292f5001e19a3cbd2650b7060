@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<%
+	// Servlet : 동적 웹 어플리케이션 (순수 자바 코드)
+	// 클라이언트 요청에 동적으로 작동하고 , 응답은 html을 이용
+	// java thread를 이용하여 동작
+	// MVC 패턴에서 Controller로 이용됨.
+	//	서블릿은 여러 개가 존재할 수 있다.
+%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>study03.jsp</title>
+	</head>
+	<body>
+		<!-- URL Mapping -->
+		<!-- URL 매핑을 통해 경로 노출을 없애고 보안을 강화하여 문제를 해결 -->
+		<%--@webServlet() 형태로 선언 --%>
+	</body>
+</html>
