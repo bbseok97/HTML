@@ -47,7 +47,7 @@ public class LoginOk extends HttpServlet {
 			HttpSession session = request.getSession();
 			session.setAttribute("user_id", id);
 			
-			response.sendRedirect("Mypage.jsp");
+			response.sendRedirect("mypage.jsp");
 		}else {	//로그인 실패
 			response.sendRedirect("login_fail.jsp");
 		}

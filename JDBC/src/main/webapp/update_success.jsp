@@ -4,9 +4,10 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>modify_ok.jsp</title>
+		<title>update_success.jsp</title>
 	</head>
 	<body>
-	
+		<h1>정보 수정이 정상처리 되었습니다.</h1>
+		<a href="mypage.jsp">마이페이지</a>
 	</body>
 </html>
