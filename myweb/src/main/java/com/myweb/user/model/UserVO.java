@@ -14,10 +14,7 @@ public class UserVO {
 	
 	public UserVO() {}
 
-	
-
 	public UserVO(String id, String pw, String name, String email, String address, Timestamp regdate) {
-		super();
 		this.id = id;
 		this.pw = pw;
 		this.name = name;
@@ -26,59 +23,57 @@ public class UserVO {
 		this.regdate = regdate;
 	}
 
-
-
 	public String getId() {
 		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
 	}
 
 	public String getPw() {
 		return pw;
 	}
 
-	public void setPw(String pw) {
-		this.pw = pw;
-	}
-
 	public String getName() {
 		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
 	}
 
 	public String getEmail() {
 		return email;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
 	public String getAddress() {
 		return address;
+	}
+
+	public Timestamp getRegdate() {
+		return regdate;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public void setPw(String pw) {
+		this.pw = pw;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	
-	public Timestamp getDate() {
-		return regdate;
-	}
-	
-	public void setDate() {
+
+	public void setRegdate(Timestamp regdate) {
 		this.regdate = regdate;
 	}
-	
+
 	@Override
 	public String toString() {
-		return "user : ["+"id="+id+" pw="+pw+" name=" +name+" email="+email
-							+" address="+address+" regdate="+regdate+"]";
+		return "UserVO [id=" + id + ", pw=" + pw + ", name=" + name + ", email=" + email + ", address=" + address
+				+ ", regdate=" + regdate + "]";
 	}
 }
