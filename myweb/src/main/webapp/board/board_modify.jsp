@@ -31,55 +31,54 @@
 <body>
 
 	<%@ include file="../include/header.jsp" %>
-	
+
 	<section>
 		<div align="center">
+		
 			<form name="regform" action="update.board" method="post">
-			<% BoardVO vo = (BoardVO)request.getAttribute("vo"); %>
 				<h2>게시판 글수정 페이지</h2>
 				<hr>
 				<table border="1" style="width:500px">
 					<tr>
 						<td>글번호</td>
-						<td><input type="text" name="num" value="<%=vo.getNum() %>" readonly></td>
+						<td><input type="text" name="num" value="${vo.num }" readonly></td>
 					</tr>
 					<tr>
 						<td>작성자</td>
-						<td><input type="text" name="writer" value="<%=vo.getWriter() %>" readonly></td>
+						<td><input type="text" name="writer" value="${vo.writer }" readonly></td>
 					</tr>
 					<tr>
-						<td>글 제목</td>
-						<td><input type="text" name="title" value="<%=vo.getTitle() %>"></td>
+						<td>글제목</td>
+						<td><input type="text" name="title" value="${vo.title }"></td>
 					</tr>
 					<tr>
-						<td>글 내용</td>
-						<td><textarea name="content" rows="10" style="width:100%"><%=vo.getContent() %></textarea></td>
+						<td>글내용</td>
+						<td><textarea name="content" rows="10" style="width:100%">${vo.content }</textarea></td>
 					</tr>
 					<tr>
 						<td colspan="2" align="center">
 							<input type="button" value="수정하기" onclick="modifyCheck()">
-							<input type="button" value="목록" onclick="location.href='list.board'">
-							<input type="button" value="삭제하기" onclick="location.href='delete.board?num=<%=vo.getNum() %>'">
+							<input type="button" value="목록" onclick="location.href='list.board?pageNum=${param.pageNum }'">
+							<input type="button" value="삭제하기" onclick="location.href='delete.board?num=${vo.num}'">
 						</td>
 					</tr>
 				</table>
 			</form>
 		</div>
-	</section>		
+	</section>
     
     <%@include file="../include/footer.jsp" %>
+    
+    <script type="text/javascript">
+    	function modifyCheck() {
+    		if(document.regform.title.value == "") {
+    			alert("제목을 입력하세요");
+    			return;
+    		}else if(confirm("게시글을 등록하겠습니까?")) {
+    			document.regform.submit();
+    		}
+    	}
+    </script>
 	
-	<script type="text/javascript">
-		function modifyCheck(){
-			
-			if(document.regform.title.value == ""){
-				alert("글 제목을 입력하세요.");
-				return;
-			}else if(confirm("게시글을 수정하시겠습니까?")){
-				//	confirm() 확인창을 띄워서 확인(true) / 취소(false) 중 선택하는 메서드
-				document.regform.submit();	//	자바스크립트의 submit 기능
-			}
-		}	
-	</script>
 </body>
 </html>

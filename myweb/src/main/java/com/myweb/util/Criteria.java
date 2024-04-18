@@ -8,6 +8,7 @@ public class Criteria {
 	//	기본 생성자
 	public Criteria() {
 		//	최초 게시판에 진입 시 기본값 설정, 페이지 1번, 10개 데이터
+		//	SQL limit 형식
 		this.pageNum = 1;
 		this.count = 10;
 	}
@@ -22,6 +23,7 @@ public class Criteria {
 	public int getPageStart() {
 		return (pageNum - 1) * count; 
 	}
+	
 	
 	//	Getter / Setter
 	public int getPageNum() {
